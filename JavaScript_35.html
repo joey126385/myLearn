@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+	var BigCities = new Array(4)
+	BigCities[0] = "Taipei"
+	BigCities[1] = "Tokyo"
+	BigCities[2] = "New York"
+	BigCities[3] = "Los Angeles"
+	BigCities[4] = "Shanghai"
+
+	var Location = new Array(4)
+	Location [0] = "Taiwan"
+	Location [1] = "Japan"
+	Location [2] = "USA"
+	Location [3] = "USA"
+	Location [4] = "China"
+
+	function getLocation() {
+		var selectedCity = document.getElementById("entry").value;
+		for ( var i = 0; i < BigCities.length; i++) {
+			if (BigCities[i] == selectedCity) {
+				break;
+			}
+		}
+		alert("這座城市位於 " + Location[i] + ".")
+	}
+</SCRIPT>
+<BODY>
+	打入右邊五個城市中其中一個在以下框框裡: (Taipei, Tokyo, New York, Los Angeles, Shanghai)
+	<INPUT TYPE="text" NAME="entry">
+	<INPUT TYPE="button" VALUE="城市所在" onClick="getLocation()">
+</BODY>
+</HTML>
