@@ -1,41 +1,43 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE> New Document </TITLE>
-<META NAME="Generator" CONTENT="EditPlus">
-<META NAME="Author" CONTENT="">
-<META NAME="Keywords" CONTENT="">
-<META NAME="Description" CONTENT="">
-</HEAD>
-<SCRIPT LANGUAGE="JavaScript">
-	var BigCities = new Array(4)
-	BigCities[0] = "Taipei"
-	BigCities[1] = "Tokyo"
-	BigCities[2] = "New York"
-	BigCities[3] = "Los Angeles"
-	BigCities[4] = "Shanghai"
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>New Document</title>
+    <meta name="Generator" content="EditPlus" />
+    <meta name="Author" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+  </head>
+  <!-- ? -->
+  <script language="JavaScript">
+    var BigCities = new Array(4);
+    BigCities[0] = "Taipei";
+    BigCities[1] = "Tokyo";
+    BigCities[2] = "New York";
+    BigCities[3] = "Los Angeles";
+    BigCities[4] = "Shanghai";
 
-	var Location = new Array(4)
-	Location [0] = "Taiwan"
-	Location [1] = "Japan"
-	Location [2] = "USA"
-	Location [3] = "USA"
-	Location [4] = "China"
+    var Location = new Array(4);
+    Location[0] = "Taiwan";
+    Location[1] = "Japan";
+    Location[2] = "USA";
+    Location[3] = "USA";
+    Location[4] = "China";
 
-	function getLocation() {
-		var selectedCity = document.getElementById("entry").value;
-		for ( var i = 0; i < BigCities.length; i++) {
-			if (BigCities[i] == selectedCity) {
-				break;
-			}
-		}
-		alert("�o�y������� " + Location[i] + ".")
-	}
-</SCRIPT>
-<BODY>
-	���J�k�䤭�ӫ������䤤�@�Ӧb�H�U�خظ�: (Taipei, Tokyo, New York, Los Angeles, Shanghai)
-	<INPUT TYPE="text" NAME="entry">
-	<INPUT TYPE="button" VALUE="�����Ҧb" onClick="getLocation()">
-</BODY>
-</HTML>
+    function getLocation() {
+      var selectedCity = document.getElementById("entry").value;
+      for (var i = 0; i < BigCities.length; i++) {
+        if (BigCities[i] == selectedCity) {
+          break;
+        }
+      }
+      alert("�o�y������� " + Location[i] + ".");
+    }
+  </script>
+  <body>
+    ���J�k�䤭�ӫ������䤤�@�Ӧb�H�U�خظ�: (Taipei, Tokyo, New York, Los Angeles,
+    Shanghai)
+    <input type="text" name="entry" />
+    <input type="button" value="�����Ҧb" onClick="getLocation()" />
+  </body>
+</html>
 ssss
